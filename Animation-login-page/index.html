@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Animation-Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Scroll to Login - Online Coders</h1>
+    <section></section>
+    <div class="container">
+        <h2>Login To Explore Our Services</h2>
+        <form action="" >
+            <label for="Email">Email</label>
+            <input type="text" placeholder="EnterEmailAddress" id="Email" 
+            name="Email" required/>
+            <label for="Password">Password</label>
+            <input type="text" placeholder="EnterPassword" id="Password" 
+            name="Password" required/>
+            <button>Login</button>
+        </form>
+    </div>
+    <script>
+        var section = document.querySelector('section');
+
+        window.onscroll=()=>{
+            // console.log(pageYOffset)
+            section.style.clipPath = `circle(${pageYOffset}px at center)`
+        }
+    </script>
+</body>
+</html>
